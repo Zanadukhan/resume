@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carson Chiu | IT Professional</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scanline"></div>
+    <div class="noise"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">
+            <span class="prompt">$</span> carson<span class="cursor">_</span>chiu
+        </div>
+        <div class="nav-links">
+            <a href="#about">about</a>
+            <a href="#skills">skills</a>
+            <a href="#experience">experience</a>
+            <a href="#projects">projects</a>
+            <a href="#education">education</a>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="about" class="hero">
+        <div class="container">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-dot red"></span>
+                    <span class="terminal-dot yellow"></span>
+                    <span class="terminal-dot green"></span>
+                    <span class="terminal-title">~/carson-chiu</span>
+                </div>
+                <div class="terminal-body">
+                    <div class="typing-line">
+                        <span class="prompt">guest@carson-chiu:~$</span>
+                        <span class="typed-text" id="heroTyped"></span>
+                        <span class="blink-cursor">|</span>
+                    </div>
+                    <div class="hero-output" id="heroOutput">
+                        <h1>Carson Chiu</h1>
+                        <p class="subtitle">IT Professional &amp; CIT Student</p>
+                        <p class="location">Vancouver, BC</p>
+                        <div class="hero-links">
+                            <a href="mailto:carsonchiu23@gmail.com" class="link-chip">
+                                <span class="link-icon">@</span> carsonchiu23@gmail.com
+                            </a>
+                            <a href="tel:778-885-5315" class="link-chip">
+                                <span class="link-icon">#</span> 778-885-5315
+                            </a>
+                            <a href="https://www.linkedin.com/in/carson-chiu1998" target="_blank" class="link-chip">
+                                <span class="link-icon">&gt;</span> LinkedIn
+                            </a>
+                            <a href="https://github.com/Zanadukhan" target="_blank" class="link-chip">
+                                <span class="link-icon">&gt;</span> GitHub
+                            </a>
+                            <a href="https://zanadukhan.github.io" target="_blank" class="link-chip">
+                                <span class="link-icon">&gt;</span> Portfolio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt">$</span> cat technical_skills.conf</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="folder-icon">/</span> Scripting
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="bullet">&gt;</span> Python</li>
+                        <li><span class="bullet">&gt;</span> Javascript</li>
+                        <li><span class="bullet">&gt;</span> Bash</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="folder-icon">/</span> Operating Systems
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="bullet">&gt;</span> Windows</li>
+                        <li><span class="bullet">&gt;</span> Linux</li>
+                        <li><span class="bullet">&gt;</span> macOS</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="folder-icon">/</span> DBMS
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="bullet">&gt;</span> MySQL</li>
+                        <li><span class="bullet">&gt;</span> SQLite</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <span class="folder-icon">/</span> Tools &amp; Platforms
+                    </div>
+                    <ul class="skill-list">
+                        <li><span class="bullet">&gt;</span> Active Directory</li>
+                        <li><span class="bullet">&gt;</span> Networking</li>
+                        <li><span class="bullet">&gt;</span> VMware</li>
+                        <li><span class="bullet">&gt;</span> Mosyle MDM</li>
+                        <li><span class="bullet">&gt;</span> Microsoft 365</li>
+                        <li><span class="bullet">&gt;</span> Google Workspace</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt">$</span> grep -r "experience" ./career/</h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <div>
+                                <h3 class="job-title">Technology Support Technician Co-op</h3>
+                                <p class="job-company">Stratford Hall &mdash; Vancouver, BC</p>
+                            </div>
+                            <span class="job-date">May 2025 &ndash; Dec 2025</span>
+                        </div>
+                        <ul class="job-duties">
+                            <li>Provided technical support to staff and students, troubleshooting and resolving hardware and software issues across a variety of devices</li>
+                            <li>Administered and maintained Apple device fleet using Mosyle MDM, including device enrollment, configuration, and policy management</li>
+                            <li>Managed user accounts, permissions through Active Directory and Google Workspace</li>
+                            <li>Supported staff and student email systems and collaborative tools within the Google Workspace environment</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <div>
+                                <h3 class="job-title">Baggage System Operative</h3>
+                                <p class="job-company">ABCoast &mdash; Richmond, BC</p>
+                            </div>
+                            <span class="job-date">Sept 2021 &ndash; Jan 2025</span>
+                        </div>
+                        <ul class="job-duties">
+                            <li>Coordinated prompt action when facing sudden issues</li>
+                            <li>Responded effectively to sudden crises and mitigated problems</li>
+                            <li>Resolved conflicts and ensured passenger satisfaction</li>
+                            <li>Demonstrated flexibility and adaptability by fulfilling multiple different duties at different times</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="job-header">
+                            <div>
+                                <h3 class="job-title">Retail Floor Associate</h3>
+                                <p class="job-company">Kin's Farm Market &mdash; Vancouver, BC</p>
+                            </div>
+                            <span class="job-date">July 2015 &ndash; Jan 2021</span>
+                        </div>
+                        <ul class="job-duties">
+                            <li>Guided customers to their desired products</li>
+                            <li>Ensured customer satisfaction by answering inquiries</li>
+                            <li>Maintained inventory levels of displayed fruits and vegetables</li>
+                            <li>Handled payments and transactions with customers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt">$</span> ls -la ~/projects/</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Raspberry Pi Homelab</h3>
+                        <span class="project-date">Mar 2025 &ndash; Present</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag">Seafile</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Pihole</span>
+                        <span class="tag">Wireguard</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>Deployed a file server using Seafile and Caddy to host personal cloud storage</li>
+                        <li>Implemented Pihole as a DNS to filter advertiser domains network-wide</li>
+                        <li>Configured a VPN using Wireguard to secure connections into local network</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Express App with Caddy &amp; EC2</h3>
+                        <span class="project-date">Feb 2025</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag">Caddy</span>
+                        <span class="tag">EC2</span>
+                        <span class="tag">Bash</span>
+                        <span class="tag">Route 53</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>Configured HTTPS encryption using Caddy</li>
+                        <li>Hosted portfolio site on AWS using EC2 Instance and Route 53 domain</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Networking Configuration Project</h3>
+                        <span class="project-date">Dec 2024</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag">DHCP</span>
+                        <span class="tag">BIRD</span>
+                        <span class="tag">VirtualBox</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>Linked multiple networks with VM nodes to each other</li>
+                        <li>Assigned IPv4 addresses using DHCP protocol</li>
+                        <li>Deployed dynamic routing with BIRD</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>New User Bash Project</h3>
+                        <span class="project-date">Dec 2024</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag">Arch Linux</span>
+                        <span class="tag">Bash</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>Recreated "useradd" command from scratch via bash scripting</li>
+                        <li>Implemented automatic configuration and packages for the user</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Database Development Project</h3>
+                        <span class="project-date">Apr 2024</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag">Microsoft Visio</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>Developed tables, relationships, and indexes to support data integrity</li>
+                        <li>Implemented SQL queries to manage and manipulate data</li>
+                    </ul>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Green Basket Website</h3>
+                        <span class="project-date">Apr &ndash; May 2024</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Flask</span>
+                        <span class="tag">NoSQL</span>
+                    </div>
+                    <ul class="project-details">
+                        <li>Developed fully functioning shopping site, applying agile development</li>
+                        <li>Collaborated with team members through CI/CD pipeline</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title"><span class="prompt">$</span> cat /etc/education.log</h2>
+            <div class="education-card">
+                <div class="edu-header">
+                    <div>
+                        <h3>British Columbia Institute of Technology</h3>
+                        <p class="edu-program">Diploma of Computer Information Technology</p>
+                        <p class="edu-location">Vancouver, BC</p>
+                    </div>
+                    <div class="edu-meta">
+                        <span class="job-date">Jan 2024 &ndash; Apr 2026 (Est.)</span>
+                        <span class="gpa">CGPA: 92%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><span class="prompt">$</span> echo "Thanks for visiting!"</p>
+            <p class="footer-sub">Carson Chiu &copy; <span id="year"></span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
