@@ -38,6 +38,39 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- Contact form (Formspree) ---
+    const contactForm = document.getElementById('contactForm');
+    const contactStatus = document.getElementById('contactStatus');
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const submitBtn = contactForm.querySelector('.contact-submit');
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Sending...';
+        contactStatus.textContent = '';
+        contactStatus.className = 'contact-note';
+
+        fetch(contactForm.action, {
+            method: 'POST',
+            body: new FormData(contactForm),
+            headers: { 'Accept': 'application/json' }
+        }).then(res => {
+            if (res.ok) {
+                contactStatus.textContent = 'Message sent successfully!';
+                contactStatus.classList.add('success');
+                contactForm.reset();
+            } else {
+                contactStatus.textContent = 'Something went wrong. Please try again.';
+                contactStatus.classList.add('error');
+            }
+        }).catch(() => {
+            contactStatus.textContent = 'Something went wrong. Please try again.';
+            contactStatus.classList.add('error');
+        }).finally(() => {
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<span class="prompt">$</span> send_message';
+        });
+    });
+
     // --- Scroll fade-in animations ---
     const observerOptions = {
         threshold: 0.1,
@@ -54,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Add fade-in class to animatable elements
     const animatables = document.querySelectorAll(
-        '.skill-card, .timeline-item, .project-card, .education-card'
+        '.skill-card, .timeline-item, .project-card, .education-card, .contact-form'
     );
 
     animatables.forEach(el => {
