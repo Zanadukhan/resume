@@ -231,10 +231,22 @@ body {
 .hero-output {
     opacity: 0;
     transition: opacity 0.5s ease;
+    text-align: center;
 }
 
 .hero-output.visible {
     opacity: 1;
+}
+
+.profile-photo {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--green);
+    box-shadow: 0 0 15px var(--green-glow);
+    margin: 0 auto 1rem;
+    display: block;
 }
 
 .hero-output h1 {
@@ -262,6 +274,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    justify-content: center;
 }
 
 .link-chip {
