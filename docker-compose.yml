@@ -1,0 +1,13 @@
+services:
+  resume:
+    build: .
+    container_name: resume
+    restart: always
+    environment:
+      - DOMAIN=:80
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
